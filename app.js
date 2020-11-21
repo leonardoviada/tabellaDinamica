@@ -1,5 +1,5 @@
 let dati = [];
-let ls = window.localStorage;
+const ls = window.localStorage;
 const tabella = document.getElementById('tabellaDati');
 
 const generaId = () => {
