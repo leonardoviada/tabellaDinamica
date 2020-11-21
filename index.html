@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabella Dinamica!</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron my-3">
+        <h2>Tabella Dinamica</h2>
+    </div>
+    <form class="form">
+        <div class="form-group ">
+            <label for="nome">Nome</label>
+            <input class="form-control form-control-sm" id="nome" name="nome" type="text">
+        </div>
+        <div class="form-group">
+            <label for="cognome">Cognome</label>
+            <input class="form-control form-control-sm" id="cognome" name="cognome" type="text">
+        </div>
+    </form>
+    <button class="btn btn-sm btn-primary" id="btnSalva">Salva Dati</button>
+
+
+    <table class="table mt-5">
+        <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Cognome</th>
+            <!--  <th scope="col">Azioni</th>-->
+        </tr>
+        </thead>
+        <tbody id="tabellaDati"></tbody>
+    </table>
+    <button class="btn btn-secondary btn-sm" id="btnCarica">Recupera dati prec.</button>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
